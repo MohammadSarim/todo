@@ -1,0 +1,61 @@
+<html>
+<head>
+<style>
+/* .container{
+    background-color: aquamarine;
+} */
+
+
+</style>
+
+
+</head>
+    <title>
+To DO App!
+    </title>
+    <body>
+        <h1>To Do App!</h1>
+        <div class="container">
+<input type="text" id="val" onfocus="this.style.backgroundColor='lightgreen'" >
+<button id="btn1" onclick="add()">Add</button><br>
+<button id="btn2" onclick="deleteall()">Delete All</button>
+<hr><div>
+<ul id="list">
+</ul>
+</div>
+</div>
+    </body>
+    <link rel="stylesheet" href="style.css">
+    <script>
+function add(){
+    //for input 
+    var val=document.getElementById("val");
+    var list =document.getElementById("list"); //ul list 
+    var li=document.createElement("li"); //insert this
+    var btn=document.createElement("Button");
+    var btntxt=document.createTextNode("Delete");
+    btn.appendChild(btntxt);
+    btn.onclick=function(){
+        var li=this.parentNode;
+        var ul=li.parentNode;
+        ul.removeChild(li);
+    }
+    var text=document.createTextNode(val.value);
+    li.appendChild(text);
+    li.appendChild(btn);
+    list.appendChild(li);
+    val.value="";
+}
+function deleteall(){
+    alert("Are you Sure....!!!")
+    document.getElementById("list").innerHTML="";
+    
+}
+
+
+
+
+
+
+        </script>    
+</head>

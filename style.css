@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+     color: peachpuff;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif ;
+    list-style-type: none;
+}
+h1{
+    color: rgb(238, 39, 4);
+    font-weight: bold;
+    font-size: 4em;
+    background-color: rgb(245, 245, 65);
+}
+#val{
+    height: 40px;
+    width: 250px;   
+    font-size: 20px; 
+    font-family: cursive ;
+}
+button{
+        font-size: 20px;
+        background-color: black;
+        color: red;
+        font-family: cursive ;     
+
+}
+/* #btn1{
+    background-color: aqua;
+} */
+/* /* } */
+button:hover{
+    background-color: rgb(248, 248, 74);
+}
